@@ -22,6 +22,11 @@
     .bg-attachment-fixed {
       background-attachment: fixed;
     }
+
+    /* 讓圖片能夠適應容器的同時維持正常的比例不被壓縮 */
+    .object-fit-cover {
+      object-fit: cover;
+    }
   </style>
 </head>
 
@@ -30,7 +35,7 @@
     <div class="deco-box position-absolute top-0 start-0"></div>
     <div class="deco-box position-absolute end-0 bottom-0"></div>
     <div class="position-absolute bg-cover bg-attachment-fixed"
-      style="top: 30px; left: 30px; bottom: 30px; right: 30px; background-image: url(https://images.unsplash.com/photo-1612282130134-49784d98ac61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=918&q=80);">
+      style="top: 30px; left: 30px; bottom: 30px; right: 30px; background-image: url(https://images.unsplash.com/photo-1608178398319-48f814d0750c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=579&q=80);">
     </div>
     <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
       <h1 class="display-1 fw-bold">陳 六角</h1>
@@ -40,106 +45,31 @@
     </div>
 
   </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="container py-5">
+    <!-- 讓圖片和文字兩個col，在行動版時為單欄圖片在上方，但此時桌面版會跑到畫面左邊，因此桌面版時要用flex-md-row-reverse置換左右位置 -->
+    <div class="row gy-3 justify-content-center flex-md-row-reverse">
+      <!-- 圖片 -->
+      <div class="col-md-4">
+        <img
+          src="https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=486&q=80"
+          alt="" class="w-100 object-fit-cover" height="500">
+      </div>
+      <!-- 文字 -->
+      <div class="col-md-5 d-flex align-items-center">
+        <div>
+          <!-- 為了讓文字置中，將下方的文字區塊包在div裡面，這樣使用flex時候就不會變成列 -->
+          <h2 class="display-4">我的冒險故事</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur dolore possimus vero tenetur sequi
+            veritatis nulla neque provident laudantium impedit, natus maxime, officia eum? Libero molestias modi
+            blanditiis quibusdam quod?</p>
+          <a href="#" class="btn btn-outline-primary mt-4 w-100">
+            看更多我的冒險故事
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
