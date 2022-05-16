@@ -4417,6 +4417,10 @@ fieldset:disabled .btn {
   top: 50% !important;
 }
 
+.top-auto {
+  top: auto !important;
+}
+
 .top-100 {
   top: 100% !important;
 }
@@ -4427,6 +4431,10 @@ fieldset:disabled .btn {
 
 .bottom-50 {
   bottom: 50% !important;
+}
+
+.bottom-auto {
+  bottom: auto !important;
 }
 
 .bottom-100 {
@@ -4441,6 +4449,10 @@ fieldset:disabled .btn {
   left: 50% !important;
 }
 
+.start-auto {
+  left: auto !important;
+}
+
 .start-100 {
   left: 100% !important;
 }
@@ -4451,6 +4463,10 @@ fieldset:disabled .btn {
 
 .end-50 {
   right: 50% !important;
+}
+
+.end-auto {
+  right: auto !important;
 }
 
 .end-100 {
