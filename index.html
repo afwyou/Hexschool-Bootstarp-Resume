@@ -136,6 +136,7 @@
   <footer class="bg-primary p-5 text-white">
     <h2 class="display-4 text-center">做個朋友吧</h2>
     <div class="row justify-content-center">
+      <!-- 左欄 -->
       <div class="col-md-5">
         <h3 class="h4">聯絡方式</h3>
         <p>遇見世上另一個地方的您相當開心</p>
@@ -149,7 +150,41 @@
           <li><i class="bi bi-telephone me-3"></i>0989-887-765</li>
         </ul>
       </div>
-      <div class="col-md-5"></div>
+      <!-- 右欄 -->
+      <form class="col-md-5">
+        <div class="row g-2">
+          <div class="col-md-6">
+            <label for="validationServer01" class="form-label">姓氏</label>
+            <input type="text" class="form-control" id="validationServer01" value="Mark" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationServer02" class="form-label">名</label>
+            <input type="text" class="form-control" id="validationServer02" value="Otto" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div class="invalid-feedback">
+              請輸入email 拜託
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">留些訊息給我吧！</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="text-end col-12">
+          <button type="submit" class="btn btn-outline-light">送出表單</button>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    </form>
     </div>
   </footer>
 </body>
